@@ -41,6 +41,7 @@ describe("Park", function(){
 
   it("can get number of dinosaurs after one year", function() {
     park.add(dino2);
-    assert.strictEqual(park.dinoNumbers(), 4);
+    assert.strictEqual(park.dinoNumbers(1), 4);
+    assert.strictEqual(park.dinoNumbers(2), 7);
   })
 })

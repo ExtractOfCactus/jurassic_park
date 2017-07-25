@@ -29,10 +29,14 @@ Park.prototype.offspringLevel = function(amount) {
   return total;
 }
 
-Park.prototype.dinoNumbers = function() {
+Park.prototype.dinoNumbers = function(years) {
   var total = this.enclosure.length;
-  for (dino of this.enclosure) {
-    total += dino.offspring;
+  var i = 1;
+  while (i <= years) {
+    for (dino of this.enclosure) {
+      total += dino.offspring;
+      i ++;
+    }
   }
   return total;
 }
