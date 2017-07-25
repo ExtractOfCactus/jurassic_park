@@ -34,9 +34,9 @@ Park.prototype.dinoNumbers = function(years) {
   var i = 1;
   while (i <= years) {
     for (dino of this.enclosure) {
-      total += dino.offspring;
-      i ++;
+      total += dino.offspring;   
     }
+    i ++;
   }
   return total;
 }

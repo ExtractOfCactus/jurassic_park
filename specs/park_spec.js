@@ -11,7 +11,7 @@ describe("Park", function(){
   beforeEach(function() {
     dino1 = new Dinosaur("Tyrannosaurus", 1);
     dino2 = new Dinosaur("Velociraptor", 3);
-    dino3 = new Dinosaur("Tyrannosaurus", 3);
+    dino3 = new Dinosaur("Tyrannosaurus", 4);
     park = new Park();
   })
 
@@ -43,5 +43,11 @@ describe("Park", function(){
     park.add(dino2);
     assert.strictEqual(park.dinoNumbers(1), 4);
     assert.strictEqual(park.dinoNumbers(2), 7);
+  })
+
+  it("can get number of dinosaurs after two years", function() {
+    park.add(dino2);
+    park.add(dino3);
+    assert.strictEqual(park.dinoNumbers(2), 16);
   })
 })
