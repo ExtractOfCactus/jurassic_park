@@ -1,0 +1,16 @@
+{
+  "name": "day_02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dinosaur.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  },
+  "scripts": {
+    "test": "mocha specs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
