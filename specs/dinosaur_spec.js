@@ -1,5 +1,5 @@
 var assert = require("assert");
-var Dinosaur = require("../disnosaur")
+var Dinosaur = require("../dinosaur")
 
 describe("Dinosaur", function() {
   var dino1;
@@ -10,4 +10,7 @@ describe("Dinosaur", function() {
     dino2 = new Dinosaur("Velociraptor", 3);
   })
 
+  it("has type", function() {
+    assert.strictEqual(dino1.type, "Tyrannosaurus");
+  })
 }) 
