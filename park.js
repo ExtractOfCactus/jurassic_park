@@ -29,4 +29,12 @@ Park.prototype.offspringLevel = function(amount) {
   return total;
 }
 
+Park.prototype.dinoNumbers = function() {
+  var total = this.enclosure.length;
+  for (dino of this.enclosure) {
+    total += dino.offspring;
+  }
+  return total;
+}
+
 module.exports = Park;
