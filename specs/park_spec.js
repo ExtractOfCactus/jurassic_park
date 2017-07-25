@@ -36,6 +36,6 @@ describe("Park", function(){
     park.add(dino1);
     park.add(dino2);
     park.add(dino3);
-    assert.strictEqual(park.offsrpingLevel(2), 2);
+    assert.strictEqual(park.offspringLevel(2), 2);
   })
 })

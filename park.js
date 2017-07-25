@@ -19,4 +19,14 @@ Park.prototype.removeType = function(type) {
   }
 }
 
+Park.prototype.offspringLevel = function(amount) {
+  var total = 0;
+  for (dino of this.enclosure) {
+    if (dino.offspring > amount) {
+      total ++;
+    }
+  }
+  return total;
+}
+
 module.exports = Park;
